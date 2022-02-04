@@ -14,8 +14,6 @@ document.addEventListener('scroll', () => {
     }
 });
 
-
-
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
@@ -77,7 +75,7 @@ workBtnContainer.addEventListener('click', (e) => {
     }
 
     // Remove selection from the previour item and select the new one
-    const active = document.querySelector('.category_btn.selected');
+    const active = document.querySelector('.category__btn.selected');
     active.classList.remove('selected');
     const target = 
         e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
